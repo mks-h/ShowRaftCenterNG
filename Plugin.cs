@@ -22,7 +22,9 @@ public class Plugin : BaseUnityPlugin {
 	}
 
 	private void OnSceneLoaded(Scene scene, LoadSceneMode mode) {
-		Logger.LogInfo($"Scene loaded: {scene.name}");
+		if (scene.name != "MainScene") {
+			return;
+		}
 
 		var go = new GameObject("ShowRaftCenterNG");
 		DontDestroyOnLoad(go);
