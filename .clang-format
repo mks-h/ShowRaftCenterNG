@@ -1,0 +1,6 @@
+---
+Language: CSharp
+ColumnLimit: 100
+UseTab: Always
+IndentWidth: 4
+TabWidth: 4
