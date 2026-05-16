@@ -5,8 +5,8 @@ of the code are adapted from the original version.
 
 It is based on the [BepInEx][bepinex] modding framework, you'll need it installed.
 
-To build the project, run `dotnet build` with the `GamePath` environment
-variable provided (e.g. `GamePath=~/.local/share/Steam/steamapps/common/Raft
+To build the project, run `dotnet build` with the `RAFT_DIR` environment
+variable provided (e.g. `RAFT_DIR=~/.local/share/Steam/steamapps/common/Raft
 dotnet build`).
 
 [bepinex]: https://github.com/BepInEx/BepInEx

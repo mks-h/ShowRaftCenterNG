@@ -14,8 +14,8 @@
     </RestoreAdditionalProjectSources>
     <RootNamespace>ShowRaftCenterNG</RootNamespace>
 
-    <BepInExPath>$(GamePath)\BepInEx</BepInExPath>
-    <ManagedDataPath>$(GamePath)\Raft_Data\Managed</ManagedDataPath>
+    <BepInExPath>$(RAFT_DIR)\BepInEx</BepInExPath>
+    <ManagedDataPath>$(RAFT_DIR)\Raft_Data\Managed</ManagedDataPath>
   </PropertyGroup>
 
   <ItemGroup>
