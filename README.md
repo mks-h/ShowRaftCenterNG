@@ -3,6 +3,13 @@
 An updated version of the [ShowRaftCenter][ogmod] mod for [Raft][raft]. Parts
 of the code are adapted from the original version.
 
+It is based on the [BepInEx][bepinex] modding framework, you'll need it installed.
+
+To build the project, run `dotnet build` with the `GamePath` environment
+variable provided (e.g. `GamePath=~/.local/share/Steam/steamapps/common/Raft
+dotnet build`).
+
+[bepinex]: https://github.com/BepInEx/BepInEx
 [ogmod]: https://github.com/aedenthorn/RaftMods
 [raft]: https://www.raft-game.com/
 
