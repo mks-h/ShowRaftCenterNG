@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>netstandard2.1</TargetFramework>
     <AssemblyName>ShowRaftCenterNG</AssemblyName>
     <Product>Show Raft Center - NG</Product>
     <Version>0.0.1</Version>
@@ -13,6 +13,9 @@
       https://nuget.samboy.dev/v3/index.json
     </RestoreAdditionalProjectSources>
     <RootNamespace>ShowRaftCenterNG</RootNamespace>
+
+    <BepInExPath>$(GamePath)\BepInEx</BepInExPath>
+    <ManagedDataPath>$(GamePath)\Raft_Data\Managed</ManagedDataPath>
   </PropertyGroup>
 
   <ItemGroup>
@@ -20,6 +23,10 @@
     <PackageReference Include="BepInEx.Core" Version="5.*" />
     <PackageReference Include="BepInEx.PluginInfoProps" Version="2.*" />
     <PackageReference Include="UnityEngine.Modules" Version="2021.3.45" IncludeAssets="compile" />
+
+    <Reference Include="Assembly-CSharp">
+      <HintPath>$(ManagedDataPath)\Assembly-CSharp.dll</HintPath>
+    </Reference>
   </ItemGroup>
   
   <ItemGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))' == 'net'">

@@ -1,6 +1,7 @@
 # ShowRaftCenterNG
 
-An updated version of the [ShowRaftCenter][ogmod] mod for [Raft][raft].
+An updated version of the [ShowRaftCenter][ogmod] mod for [Raft][raft]. Parts
+of the code are adapted from the original version.
 
 [ogmod]: https://github.com/aedenthorn/RaftMods
 [raft]: https://www.raft-game.com/
